@@ -46,6 +46,9 @@ const colors: any = {
   templateUrl: 'template.html',
 })
 export class DemoComponent {
+
+  //go back here no asycn
+
   @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any> | undefined;
 
 
