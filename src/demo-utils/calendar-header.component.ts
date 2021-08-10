@@ -68,9 +68,11 @@ import { CalendarView } from 'angular-calendar';
   `,
 })
 export class CalendarHeaderComponent {
-  @Input() view: CalendarView | undefined;
+  @Input()
+  view!: CalendarView;
 
-  @Input() viewDate: Date | undefined;
+  @Input()
+  viewDate!: Date;
 
   @Input() locale: string = 'en';
 
